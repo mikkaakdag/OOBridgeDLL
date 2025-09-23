@@ -13,7 +13,21 @@ public class Vehicle
     /// LicensePlate af typen string
     /// Date af typen DateTime
     /// </summary>
-    public string LicensePlate { get; set; }
+
+    public string _licensePlate;
+    public string LicensePlate 
+    { 
+      get => _licensePlate;
+
+      set
+        {
+            if (value.Length > 7)
+            {
+                throw new ArgumentException("Nummerpladen må ikke være længere end 7 tegn");
+            }
+            _licensePlate = value;
+        }
+    }
     public DateTime Date { get; set; }
 
     /// <summary>
