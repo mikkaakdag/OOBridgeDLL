@@ -1,39 +1,20 @@
 ﻿namespace OOBridgeDLL;
 
-public class Car
+public class Car : Vehicle
 {
-    /// <summary>
-    /// Car-klassen har 2 properties:
-    /// LicensePlate af typen string
-    /// Date af typen DateTime
-    /// </summary>
-    public string LicensePlate { get; set; }
-    public DateTime Date { get; set; }
-
-    /// <summary>
-    /// Car-klassens constructor har 2 parametre:
-    /// licensePlate af typen string, date af typen DateTime
-    /// Disse initialiseres med properties'ene
-    /// </summary>
-    public Car (string licensePlate, DateTime date)
+    public Car(string licensePlate, DateTime date)
+        : base(licensePlate, date)
     {
-        LicensePlate = licensePlate;
-        Date = date;
+
     }
-    
-    /// <summary>
-    /// Der findes også 2 metoder:
-    /// Price og VehicleType
-    /// </summary>
-    public double Price()
+   
+    public override double Price()
     {
         return 230;
     }
 
-    public string VehicleType()
+    public override string VehicleType()
     {
         return "Car";
     }
-
-
 }
