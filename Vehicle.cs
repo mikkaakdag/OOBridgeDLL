@@ -9,9 +9,11 @@ namespace OOBridgeDLL;
 public class Vehicle
 {
     /// <summary>
-    /// Vehicle-klassen har 2 properties:
+    /// Vehicle-klassen har 3 properties og et instance field:
     /// LicensePlate af typen string
     /// Date af typen DateTime
+    /// HasBrobizz as typen bool
+    /// _licensePlate som er instance field'et
     /// </summary>
 
     public string _licensePlate;
@@ -29,25 +31,41 @@ public class Vehicle
         }
     }
     public DateTime Date { get; set; }
+    public bool HasBrobizz {  get; set; }
 
     /// <summary>
-    /// Vehicle-klassens constructor har 2 parametre:
-    /// licensePlate af typen string, date af typen DateTime
+    /// Vehicle-klassens constructor har 3 parametre:
+    /// licensePlate af typen string, date af typen DateTime, hasBrobizz af typen bool
     /// Disse initialiseres med properties'ene
     /// </summary>
-    public Vehicle (string licensePlate, DateTime date)
+    public Vehicle (string licensePlate, DateTime date, bool hasBrobizz)
     {
         LicensePlate = licensePlate;
         Date = date;
+        HasBrobizz = hasBrobizz;
     }
 
     /// <summary>
-    /// Der findes også 2 metoder:
-    /// Price og VehicleType
+    /// Der findes også 3 metoder:
+    /// GetBasePrice, Price og VehicleType
     /// </summary>
+
+    protected virtual double GetBasePrice()
+    {
+        throw new NotImplementedException("Nedarvede klasser skal implementere GetBasePrice()");
+    }
     public virtual double Price()
     {
-        return 0;
+        double basePrice = GetBasePrice();
+
+        if (HasBrobizz == true)
+        {
+            return basePrice * 0.9;
+        }
+        else
+        {
+            return basePrice;
+        }
     }
 
     public virtual string VehicleType()

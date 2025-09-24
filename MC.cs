@@ -8,13 +8,13 @@ namespace OOBridgeDLL;
 
 public class MC : Vehicle
 {
-    public MC (string licensePlate, DateTime date)
-        : base (licensePlate, date)
+    public MC (string licensePlate, DateTime date, bool hasBrobizz)
+        : base (licensePlate, date, hasBrobizz)
     {
 
     }
 
-    public override double Price()
+    protected override double GetBasePrice() 
     {
         return 120;
     }

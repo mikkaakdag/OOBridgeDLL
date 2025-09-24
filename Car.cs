@@ -2,13 +2,13 @@
 
 public class Car : Vehicle
 {
-    public Car(string licensePlate, DateTime date)
-        : base(licensePlate, date)
+    public Car(string licensePlate, DateTime date, bool hasBrobizz)
+        : base(licensePlate, date, hasBrobizz)
     {
 
     }
-   
-    public override double Price()
+
+    protected override double GetBasePrice()   
     {
         return 230;
     }
