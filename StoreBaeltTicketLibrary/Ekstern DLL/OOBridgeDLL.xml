@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>OOBridgeDLL</name>
+    </assembly>
+    <members>
+        <member name="F:OOBridgeDLL.Vehicle._licensePlate">
+            <summary>
+            Vehicle-klassen har 3 properties og et instance field:
+            LicensePlate af typen string
+            Date af typen DateTime
+            HasBrobizz as typen bool
+            _licensePlate som er instance field'et
+            </summary>
+        </member>
+        <member name="M:OOBridgeDLL.Vehicle.#ctor(System.String,System.DateTime,System.Boolean)">
+            <summary>
+            Vehicle-klassens constructor har 3 parametre:
+            licensePlate af typen string, date af typen DateTime, hasBrobizz af typen bool
+            Disse initialiseres med properties'ene
+            </summary>
+        </member>
+        <member name="M:OOBridgeDLL.Vehicle.Price">
+            <summary>
+            Der findes også 3 metoder:
+            GetBasePrice, Price og VehicleType
+            </summary>
+        </member>
+    </members>
+</doc>
