@@ -7,6 +7,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOBridgeDLL", "OOBridgeDLL.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOBridgeDLLTests", "..\OOBridgeDLLTests\OOBridgeDLLTests.csproj", "{836D972C-AECA-47D0-BA4B-41CE7F0CEDF0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreBaeltTicketLibrary", "..\StoreBaeltTicketLibrary\StoreBaeltTicketLibrary.csproj", "{522E3654-D783-4055-B0BF-704974DD9249}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreBaeltTicketLibraryTests", "..\StoreBaeltTicketLibraryTests\StoreBaeltTicketLibraryTests.csproj", "{8216E6B9-647C-40C5-A958-916B8BE9D1C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oresundbroen", "..\Oresundbroen\Oresundbroen.csproj", "{019D121B-0B47-47A5-B7DB-7ED4727528A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OresundbroenTests", "..\OresundbroenTests\OresundbroenTests.csproj", "{F003784C-CC19-48FE-9CF6-395D44B54B57}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +29,22 @@ Global
 		{836D972C-AECA-47D0-BA4B-41CE7F0CEDF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{836D972C-AECA-47D0-BA4B-41CE7F0CEDF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{836D972C-AECA-47D0-BA4B-41CE7F0CEDF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{522E3654-D783-4055-B0BF-704974DD9249}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{522E3654-D783-4055-B0BF-704974DD9249}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{522E3654-D783-4055-B0BF-704974DD9249}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{522E3654-D783-4055-B0BF-704974DD9249}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8216E6B9-647C-40C5-A958-916B8BE9D1C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8216E6B9-647C-40C5-A958-916B8BE9D1C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8216E6B9-647C-40C5-A958-916B8BE9D1C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8216E6B9-647C-40C5-A958-916B8BE9D1C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{019D121B-0B47-47A5-B7DB-7ED4727528A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{019D121B-0B47-47A5-B7DB-7ED4727528A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{019D121B-0B47-47A5-B7DB-7ED4727528A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{019D121B-0B47-47A5-B7DB-7ED4727528A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F003784C-CC19-48FE-9CF6-395D44B54B57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F003784C-CC19-48FE-9CF6-395D44B54B57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F003784C-CC19-48FE-9CF6-395D44B54B57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F003784C-CC19-48FE-9CF6-395D44B54B57}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

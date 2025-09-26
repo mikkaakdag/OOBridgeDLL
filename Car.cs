@@ -8,7 +8,7 @@ public class Car : Vehicle
 
     }
 
-    protected override double GetBasePrice()   
+    public override double Price()   
     {
         return 230;
     }
@@ -16,5 +16,16 @@ public class Car : Vehicle
     public override string VehicleType()
     {
         return "Car";
+    }
+    public override double Brobizz()
+    {
+        if (HasBrobizz == true)
+        {
+            return Price() * 0.9;
+        }
+        else
+        {
+            return Price();
+        }
     }
 }

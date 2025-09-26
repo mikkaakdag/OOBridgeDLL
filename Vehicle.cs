@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OOBridgeDLL;
 
-public class Vehicle
+public abstract class Vehicle
 {
     /// <summary>
     /// Vehicle-klassen har 3 properties og et instance field:
@@ -33,6 +33,7 @@ public class Vehicle
     public DateTime Date { get; set; }
     public bool HasBrobizz {  get; set; }
 
+
     /// <summary>
     /// Vehicle-klassens constructor har 3 parametre:
     /// licensePlate af typen string, date af typen DateTime, hasBrobizz af typen bool
@@ -50,27 +51,15 @@ public class Vehicle
     /// GetBasePrice, Price og VehicleType
     /// </summary>
 
-    protected virtual double GetBasePrice()
-    {
-        throw new NotImplementedException("Nedarvede klasser skal implementere GetBasePrice()");
-    }
-    public virtual double Price()
-    {
-        double basePrice = GetBasePrice();
+    //public virtual double GetBasePrice()
+    //{
+    //    throw new NotImplementedException("Nedarvede klasser skal implementere GetBasePrice()");
+    //}
 
-        if (HasBrobizz == true)
-        {
-            return basePrice * 0.9;
-        }
-        else
-        {
-            return basePrice;
-        }
-    }
 
-    public virtual string VehicleType()
-    {
-        return "Vehicle";
-    }
+    public abstract double Price();
 
+    public abstract string VehicleType();
+
+    public abstract double Brobizz();
 }

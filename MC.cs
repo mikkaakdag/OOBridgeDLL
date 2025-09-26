@@ -14,7 +14,7 @@ public class MC : Vehicle
 
     }
 
-    protected override double GetBasePrice() 
+    public override double Price() 
     {
         return 120;
     }
@@ -22,5 +22,17 @@ public class MC : Vehicle
     public override string VehicleType()
     {
         return "MC";
+    }
+
+    public override double Brobizz()
+    {
+        if (HasBrobizz == true)
+        {
+            return Price() * 0.9;
+        }
+        else
+        {
+            return Price();
+        }
     }
 }
